@@ -32,4 +32,4 @@ Always commit to the changes and then switch branches.
 
 2. git branch --merged: see the merged branches
 3. git branch --no-merged: see the unmerged branches
-git branch -d <nameoftheBranch>: gives error first (assumes that we have mistakenly deleted the branch, so asks you to write 'D' instead of 'd'). Thus 'D' shows no error and branch gets deleted.
+4. git branch -d <nameoftheBranch>: gives error first (assumes that we have mistakenly deleted the branch, so asks you to write 'D' instead of 'd'). Thus 'D' shows no error and branch gets deleted.
