@@ -1,0 +1,35 @@
+General Git commands and uses
+
+1. git init: only use for the first time only, if you run this command again it will reinitilize the repositary, which we don not want.
+2. git add --a : all the changes will get staged. (committed)
+3. git add first.txt: add only the file which you want is good. Do not add the files you are not sure of will work fine.
+4. git status: to look at the status of the repository, track changes etc.
+5. git log: see the changes time by person etc. all info.
+6. git commmit -m "xxxx yyyyy" : see the commits and messages put (eg: bugs fixed etc)
+7. rm -rf .git : Deletes the git content of the repository. No tracking of the repo from now. 
+8. git diff: compares modified files with that of the staging area
+9. git add -a -m "Direct commit": skips the staging part and commits directly, untrakcked files cannot be commited directly, we need to add that file first and then commit changes
+10. git checkout -- first_rename.txt: rolls back to the previously committed file. Problematic if you have an information in the latest file and you did not commit that. Be careful!
+11. git checkout -f: same as previous, but for all the files. Again, be very careful!
+12. (i) git remote xx yy (take from github- from an existing repository, eg git remote add origin https://github.com/Abhinna-Sundar/git-learn.git): create a website where this repository exists.
+    (ii) git remote (after you use the previous command): to see the remotes -- in this case it is origin
+    (iii)git remote -v: see how to push and fetch the commits and files from repository
+13. git config --global alias.st status/alisas.ci commit/alias.unstage "--staged --": add alias in github. So when you use git st, it means git status, similarly with ci = commit
+Finally use git log to see the final stages.
+
+
+SSH keys generate
+1. ssh-keygen -t ed25519 -C "your_email@example.com": replace with my email ID
+2. eval "$(ssh-agent -s)": ensure that SSH agent is running -- will get Agent pid xxxxx
+3. 
+
+
+Branching
+
+1. git checkout -b develop: create a new branch and go to that branch also. 
+
+Always commit to the changes and then switch branches. 
+
+2. git branch --merged: see the merged branches
+3. git branch --no-merged: see the unmerged branches
+git branch -d <nameoftheBranch>: gives error first (assumes that we have mistakenly deleted the branch, so asks you to write 'D' instead of 'd'). Thus 'D' shows no error and branch gets deleted.
