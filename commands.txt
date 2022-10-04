@@ -16,6 +16,7 @@ General Git commands and uses
     (iii)git remote -v: see how to push and fetch the commits and files from repository
 13. git config --global alias.st status/alisas.ci commit/alias.unstage "--staged --": add alias in github. So when you use git st, it means git status, similarly with ci = commit
 Finally use git log to see the final stages.
+14. git status xxxxyyy (keynumber- first few numbers only after putting gitlog): to go back in time to see the older version of the repo
 
 
 SSH keys generate
