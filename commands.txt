@@ -14,10 +14,11 @@ General Git commands and uses
 12. (i) git remote xx yy (take from github- from an existing repository, eg git remote add origin https://github.com/Abhinna-Sundar/git-learn.git): create a website where this repository exists.
     (ii) git remote (after you use the previous command): to see the remotes -- in this case it is origin
     (iii)git remote -v: see how to push and fetch the commits and files from repository
-13. git config --global alias.st status/alisas.ci commit/alias.unstage "--staged --": add alias in github. So when you use git st, it means git status, similarly with ci = commit
+13. git config --global alias.st status/alisas.ci commit/alias.unstage "--staged --": add alias in github. So when you use git st- it means git status, similarly with ci = commit
 Finally use git log to see the final stages.
 14. git status xxxxyyy (keynumber- first few numbers only after putting gitlog): to go back in time to see the older version of the repo
-
+15. git switch -c anyname: to make the older version as a separate branch (make sure that you are in that branch first by typing "git checkout xxxyyy" command)
+16. git config --global --edit: go to git config file and edit your shortcuts.
 
 SSH keys generate
 1. ssh-keygen -t ed25519 -C "your_email@example.com": replace with my email ID
@@ -31,4 +32,11 @@ Branching
 2. git push origin bugfix: push the branch to the github repo
 3. git push origin bugfix:mybugfix : to change the name of the branch
 
-Always commit to the changes and then switch branches. 
+Always commit to the changes and then switch branches.
+
+Github:
+
+Cloning means to download the files from the repository on the internet and put it on your computer. Different people can do this on their own systems.
+
+1. git clone https://xxxxx person1 : Person 1 downloading this repo on their system.
+2. git push (if it shows error, thus use the command below the error to push it to the repository): Pushes the code into the repository.
